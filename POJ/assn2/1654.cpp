@@ -14,7 +14,6 @@ int main() {
         long long int prev_x = 0;
         long long int prev_y = 0;
         string my_str;
-        long long int term1{ }, term2{ };
         cin.ignore();
         getline(cin, my_str);
         long double area{ };
@@ -28,20 +27,20 @@ int main() {
             } else if (temp == '2') {
                 current_y--;
             } else if (temp == '6') {
-                current_x++;
-            } else if (temp == '4') {
                 current_x--;
-            } else if (temp == '9') {
+            } else if (temp == '4') {
                 current_x++;
+            } else if (temp == '9') {
+                current_x--;
                 current_y++;
             } else if (temp == '7') {
-                current_x--;
+                current_x++;
                 current_y++;
             } else if (temp == '3') {
-                current_x++;
+                current_x--;
                 current_y--;
             } else if (temp == '1') {
-                current_x--;
+                current_x++;
                 current_y--;
             }
             area += current_x*prev_y - prev_x*current_y;
