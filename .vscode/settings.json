@@ -3,5 +3,6 @@
         "iostream": "cpp",
         "iosfwd": "cpp",
         "*.tcc": "cpp"
-    }
+    },
+    "editor.defaultFormatter": "ms-vscode.cpptools"
 }
